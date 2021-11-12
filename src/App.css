@@ -1,0 +1,166 @@
+h1 {
+  color: #ffffff;
+
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 1.5rem;
+
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+
+  width: 54rem;
+  height: 6.4rem;
+  padding: 2.3rem 2.4rem;
+
+  color: #393a4b;
+  background-color: #ffffff;
+  box-shadow: 0rem 3.5rem 5rem -1.5rem rgba(194, 195, 214, 0.5);
+
+  border-radius: 0.5rem;
+  margin-bottom: 2.4rem;
+
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+::placeholder {
+  color: #9495a5;
+}
+
+.quadroDeTarefas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  box-shadow: 0rem 3.5rem 5rem -1.5rem #c2c3d680;
+  border-radius: 0.5rem;
+
+  color: #494c6b;
+  background-color: #ffffff;
+
+  width: 54rem;
+  min-height: 11.4rem;
+}
+
+ul {
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  padding: 2rem;
+
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.02rem;
+
+  cursor: pointer;
+}
+
+.linha {
+  position: absolute;
+  width: 100%;
+  top: 5rem;
+  right: 0rem;
+}
+
+.fechar {
+  width: 17.68px;
+  height: 17.68px;
+
+  color: #494c6b;
+
+  cursor: pointer;
+}
+
+.rodapeListaDeTarefas {
+  width: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9495a5;
+  padding: 1rem;
+
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.03rem;
+}
+
+.situacaoTarefas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.selected {
+  color: #3a7cfd;
+}
+
+.limparTarefas {
+  font-weight: normal;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.limparTarefas p {
+  text-align: right;
+}
+
+.ativo {
+  color: #494c6b;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  input {
+    width: 34rem;
+    height: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .quadroDeTarefas {
+    width: 34rem;
+  }
+
+  .rodapeListaDeTarefas {
+    width: 34rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .situacaoTarefas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
